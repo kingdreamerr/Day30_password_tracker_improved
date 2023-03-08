@@ -4,9 +4,33 @@ Creating good and strong passwords is a little bit challenging. You create a pas
 
 ## Lessons learned today
 
-- How to add pop up windows tkinter
-- How to copy text to clipboard 
-
+- Errors
+- Exception
+```
+try:
+    file = open('file_name.txt') as data_file:
+except FileNotFoundError:
+    file = open('file_name.txt')
+else:
+    content = file.read()
+    print(content)
+finally:
+    file.close()
+    print("filewas closed")
+```
+- Saving JSON data
+   #### writing:
+        ```
+        json.duump(new_data,file_data,indentation=4)
+        ```
+    #### Reading:
+        ```
+        json.load(file_name)
+        ```
+    #### Updating:
+        ```
+        json.update(previous_data,file_name,indent=4)
+        ```
 ## Project to solidify material learned: 
 
 ### Preview:
