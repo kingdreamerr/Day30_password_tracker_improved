@@ -22,6 +22,10 @@ def generate_password():
     password_entry.insert(0, password)
     pyperclip.copy(password)
 
+# ---------------------------- FIND PASSWORD ------------------------------- #
+def find_password():
+    website = website_entry.get()
+
 # ---------------------------- SAVE PASSWORD ------------------------------- #
 def save():
 
