@@ -33,8 +33,10 @@ finally:
 ## Project to solidify material learned: 
 
 ### Preview:
-![password1](./pass1.png)
-![password](./pass2.png)
+![password3](./found_password.png)
+### Inform the user that the website they looked up is not saved.
+![password4](./not_found.png)
+
 
 
 
