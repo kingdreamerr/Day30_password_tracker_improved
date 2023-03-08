@@ -40,9 +40,15 @@ def find_password():
 # ---------------------------- SAVE PASSWORD ------------------------------- #
 def save():
 
-    website = website_entry.get()
+    website = website_entry.get().lower()
     email = email_entry.get()
     password = password_entry.get()
+    new_data = {
+        website: {
+            'email': email,
+            'password': password
+        }
+    }
 
     if len(website) == 0 or len(password) == 0:
         messagebox.showinfo(title="Oops", message="Please make sure you haven't left any fields empty.")
